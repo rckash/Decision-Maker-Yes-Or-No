@@ -14,16 +14,30 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //button functionality
-        binding.button.setOnClickListener { getYesOrNo() }
+        binding.elevatedButtonDecide.setOnClickListener { getYesOrNo() }
+
     }
     private fun getYesOrNo() {
         showToast()
 
-        var decision = (1..2).random()
+        val decision = (1..2).random()
+        val decisionStyle = (1..3).random()
         if (decision == 1) {
-            binding.textView.text = "YES"
+            if (decisionStyle == 1) {
+                binding.textViewDecision.text = "YES"
+            } else if (decisionStyle == 2) {
+                binding.textViewDecision.text = "YES!"
+            } else {
+                binding.textViewDecision.text = "YES."
+            }
         } else {
-            binding.textView.text = "NO"
+            if (decisionStyle == 1) {
+                binding.textViewDecision.text = "NO"
+            } else if (decisionStyle == 2) {
+                binding.textViewDecision.text = "NO!"
+            } else {
+                binding.textViewDecision.text = "NO."
+            }
         }
     }
     private fun showToast() {
