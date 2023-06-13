@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">YesOrNo</string>
+    <string name="btn_text_decide">Decide</string>
+    <string name="text_yes">YES</string>
+    <string name="text_yes1">YES!</string>
+    <string name="text_yes2">YES.</string>
+    <string name="text_no">NO</string>
+    <string name="text_no1">NO!</string>
+    <string name="text_no2">NO.</string>
+    <string name="text_dark_mode">Dark Mode</string>
+    <string name="text_light_mode">Light Mode</string>
 </resources>
